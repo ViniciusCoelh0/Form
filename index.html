@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+<section>
+  <div class="forms">
+    <div class="contact">
+      <h1 class="titleFirst">Contact Us</h1>
+    </div>
+
+      <form id="myForm" action="action_page.html" onsubmit="return validateForm()">
+        <div class="infoPerson">
+          <div class="infosName">
+              <h2 class="title">First Name</h2>
+            <input type="text" name="Name" id="first"  minlength="2" placeholder="First Name">
+        
+              <h2 class="title">Last Name</h2>
+            <input type="text" name="lName" id="second"  minlength="2" placeholder="Last Name">
+          </div>
+        
+          <div class="email">
+            <h2 class="titles">Email Address</h2>
+            <input type="email" name="Your email" id="mail" placeholder="Your Email">
+
+            <!-- This field is required -->
+          </div>
+        </div>
+        
+        <div class="querys">
+          <h2 class="titles">Query Type</h2>
+          <div class="countainerQuerys" >
+            <div class="query">
+          <fieldset>
+            <input type="radio" name="drone" id="enquiry">General Enquiry
+          </fieldset>
+        </div>
+        <div class="query">
+          <fieldset>
+            <input type="radio" name="drone" id="request">Support Request
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="message">
+      <h2 class="titles">Message</h2>
+      <input type="text" name="" id="messages" maxlength="200">
+    </div>
+    <!-- This field is required -->
+    <div class="accept">
+      <input type="checkbox" name="confirm" id="check"><p>I consent to being contacted by the team</p>
+    </div>
+    
+    <!-- To submit this form, please consent to being contacted -->
+    
+    <input type="submit" value="Submit">
+    
+  </form>
+    
+    <!-- Message Sent!
+    Thanks for completing the form. We'll be in touch soon! -->
+  </div>
+</section>
+
+<!-- Footer -->
+<section id="foot">
+  <footer>
+    <div class="attribution">
+      <p class="paragrafo">Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/ViniciusCoelh0">Vinicius Dantas</a>.</p>
+      </div>
+    </footer>
+  </section>
+  
+  <script src="js/validation.js"></script>
+  
+</body>
+</html>
