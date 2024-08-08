@@ -42,9 +42,4 @@ function validateForm() {
 
 }
 
-console.log(mail)
-
-// function validadeForm(){
-//     let form = document.forms[]
-// }
 
